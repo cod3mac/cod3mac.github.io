@@ -1,0 +1,132 @@
+/* Container for recipe cards */
+#saved-recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0.5rem;
+    margin: auto;
+    width: auto;
+    align-items: center;
+}
+  
+/* <a> wrapper for entire card */
+.recipe-card {
+    text-decoration: none;
+    color: inherit;
+    margin: 0.5em;
+    width: 16rem;
+    height: 100%;
+    min-width: 200px;
+    max-width: 400px;
+}
+  
+/* Recipe card styles */
+.recipe-card > article {
+    border: 0.1rem solid #4F6F52;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.25rem 0.75rem rgba(232, 223, 202, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #F5EFE6;
+    cursor: pointer;
+    height: auto;
+}
+  
+.recipe-card > article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 2rem rgba(232, 223, 202, 0.9);
+}
+  
+/* Image container */
+.image-container {
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #4F6F52;
+}
+  
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+/* Recipe card content */
+.recipe-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    margin: 0;
+}
+  
+.recipe-card-content > h4 {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+    transition: color 0.3s ease;
+}
+  
+.recipe-card-content > p {
+    height: 1.5rem;
+    font-size: 1rem;
+    padding: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+}
+  
+/* Custom fonts for specific recipes */
+#chocolate-cake .recipe-card-content p {
+    font-family: "Dancing Script", cursive;
+}
+  
+#seafood-pasta .recipe-card-content p {
+    font-family: "Indie Flower", cursive;
+}
+  
+#sausage-rolls .recipe-card-content p {
+    font-family: "Zeyada", cursive;
+}
+
+#my-cursive-highlight {
+    font-family: "Indie Flower", cursive;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 10rem
+    width 20%;
+}
+
+.view-all-button {
+    align-content: center;
+    margin: auto;
+    background: #F5EFE6;
+    color: inherit;
+    border: 0.1rem solid #4F6F52;
+    border-radius: 8px;
+    height: 10rem
+    width 10rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.75rem rgba(232, 223, 202, 0.5);
+}
+
+
+.view-all-button:hover {
+    background-color: #4F6F52;
+    color:#F5EFE6;
+    transition: transform 0.3s ease;
+}

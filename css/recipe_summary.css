@@ -1,0 +1,79 @@
+/* Container styling for the 'recently-shared' section */
+.recently-shared {
+    font-family: "Dancing Script", cursive;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  /* Hover effect for the link */
+  .recently-shared:hover .recipe-preview {
+    background-color: #F5EFE6;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Recipe preview article styling */
+  .recipe-preview {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 0.1rem solid #4F6F52;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(232, 223, 202, 0.7);
+  }
+  
+  /* Image styling */
+  .recipe-preview > img {
+    width: 30%;
+    border: 0.1rem solid #4F6F52;
+    margin: 2rem;
+    border-radius: 8px;
+  }
+  
+  /* Share button styling */
+  .preview-text button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .preview-text{
+    margin-right: 2rem;
+  }
+  
+  /* Hover effect for the share button */
+  .preview-text button:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Share icon styling */
+  .preview-text button img {
+    width: 2em;
+    height: auto;
+    display: block;
+    border: none;
+    margin: 0;
+  }
+  
+  /* Title and share button layout */
+  .preview-text h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Author subtitle styling */
+  .preview-text h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }

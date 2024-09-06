@@ -1,0 +1,37 @@
+footer {
+    display: grid;
+    height: 20vh;
+    border-top: #1A4D2E solid 1px;
+    padding: 1em;
+    align-items: flex-start;
+    justify-items: center; 
+    grid-template-areas: 
+        "title pages privacy";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#footer-title {
+    font-size: 1.8rem;
+    margin: 0;
+    grid-area: title;
+    text-align: center;
+    width: 100%;
+}
+
+footer > nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    color: #4F6F52;
+}
+
+#pages {
+    grid-area: pages;
+}
+
+#privacy {
+    grid-area: privacy;
+}

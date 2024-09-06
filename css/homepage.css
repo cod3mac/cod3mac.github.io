@@ -1,0 +1,13 @@
+
+
+ol {
+    display: flex;  
+    justify-content: space-between; 
+}
+
+ol > li {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
