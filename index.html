@@ -32,6 +32,7 @@
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Noto+Sans&effect=emboss"
 		/>
+		<script src="app.js"></script>
 
 		<title>My Recipes</title>
 	</head>
@@ -67,7 +68,9 @@
 		</header>
 
 		<main>
+			<!-- Page Explainer  -->
 			<h2>
+				<!-- Span element allows part of the text to be targetted so we can change font -->
 				Restoring Personal Connections with
 				<span id="cursive-highlight">Handwritten Recipes .</span>
 			</h2>
@@ -86,8 +89,10 @@
 
 			<hr />
 
+			<!-- Recently shared section -->
 			<h2>Recently Shared with Me</h2>
 
+			<!-- Recipe preview -->
 			<section>
 				<a href=" " class="recently-shared">
 					<article class="recipe-preview">
@@ -99,7 +104,7 @@
 						<div class="preview-text">
 							<h2>
 								Best Chocolate Cake
-								<button>
+								<button id="share-button">
 									<img src="data/share.png" alt="Share" />
 								</button>
 							</h2>
@@ -122,6 +127,7 @@
 
 			<hr />
 
+			<!-- Saved Recipes Section -->
 			<h2>My Favourite Recipes</h2>
 
 			<section id="saved-recipes">
@@ -177,10 +183,6 @@
 				</a>
 			</section>
 
-			<div class="button-container">
-				<button class="view-all-button">View All</button>
-			</div>
-
 			<hr />
 
 			<h2>
@@ -188,8 +190,10 @@
 				<span id="my-cursive-highlight">by Me</span>
 			</h2>
 
-			<section id="saved-recipes">
-				<a href="#" class="recipe-card" id="seafood-pasta">
+			<!-- My recipes section -->
+			<section id="my-recipes">
+				<!-- Placeholder cards with images and text, javascript will fetch and replace images and titles -->
+				<a href="#" class="recipe-card">
 					<article>
 						<div class="image-container">
 							<img
@@ -204,7 +208,7 @@
 					</article>
 				</a>
 
-				<a href="#" class="recipe-card" id="seafood-pasta">
+				<a href="#" class="recipe-card">
 					<article>
 						<div class="image-container">
 							<img
@@ -219,7 +223,7 @@
 					</article>
 				</a>
 
-				<a href="#" class="recipe-card" id="seafood-pasta">
+				<a href="#" class="recipe-card">
 					<article>
 						<div class="image-container">
 							<img
@@ -234,7 +238,7 @@
 					</article>
 				</a>
 
-				<a href="#" class="recipe-card" id="seafood-pasta">
+				<a href="#" class="recipe-card">
 					<article>
 						<div class="image-container">
 							<img
@@ -249,65 +253,9 @@
 					</article>
 				</a>
 
-				<a href="#" class="recipe-card" id="seafood-pasta">
-					<article>
-						<div class="image-container">
-							<img
-								src="https://placebear.com/100/100"
-								alt="Example Dish by Me"
-							/>
-						</div>
-						<div class="recipe-card-content">
-							<p>by Me</p>
-							<h4>"Example Dish"</h4>
-						</div>
-					</article>
-				</a>
-
-				<a href="#" class="recipe-card" id="seafood-pasta">
-					<article>
-						<div class="image-container">
-							<img
-								src="https://placebear.com/100/100"
-								alt="Example Dish by Me"
-							/>
-						</div>
-						<div class="recipe-card-content">
-							<p>by Me</p>
-							<h4>"Example Dish"</h4>
-						</div>
-					</article>
-				</a>
-
-				<a href="#" class="recipe-card" id="seafood-pasta">
-					<article>
-						<div class="image-container">
-							<img
-								src="https://placebear.com/100/100"
-								alt="Example Dish by Me"
-							/>
-						</div>
-						<div class="recipe-card-content">
-							<p>by Me</p>
-							<h4>"Example Dish"</h4>
-						</div>
-					</article>
-				</a>
-
-				<a href="#" class="recipe-card" id="seafood-pasta">
-					<article>
-						<div class="image-container">
-							<img
-								src="https://placebear.com/100/100"
-								alt="Example Dish by Me"
-							/>
-						</div>
-						<div class="recipe-card-content">
-							<p>by Me</p>
-							<h4>"Example Dish"</h4>
-						</div>
-					</article>
-				</a>
+				<div class="button-container">
+					<button class="load-more-button">Load More Recipes!</button>
+				</div>
 			</section>
 		</main>
 
